@@ -9,12 +9,12 @@
             <div class="collapse show" id="project-collapse">
                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                   <li>
-                     <a href="/admin/projects" class="link-body-emphasis d-inline-flex text-decoration-none rounded">List</a>
-                  </li>
-                  {{-- <li>
-                     <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a>
+                     <a href="/admin/projects" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Indice</a>
                   </li>
                   <li>
+                     <a href="/admin/projects/create" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Crea nuovo progetto</a>
+                  </li>
+                  {{-- <li>
                      <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a>
                   </li> --}}
                </ul>

@@ -31,7 +31,7 @@ class ProjectController extends Controller
       $newProject = new Project();
       $newProject->fill($form_data);
       $newProject->save();
-      return redirect()->route("profile.admin.projects.show", ["project" => $newProject->id])->with("status", "Il nuovo project è stato aggiunto con successo!");
+      return redirect()->route("admin.projects.show", ["project" => $newProject->id])->with("status", "Il nuovo project è stato aggiunto con successo!");
    }
 
    public function show(Project $project)
@@ -54,6 +54,6 @@ class ProjectController extends Controller
    public function destroy(Project $project)
    {
       $project->delete();
-      return redirect()->route("profile.admin.projects.index");
+      return redirect()->route("admin.projects.index");
    }
 }
