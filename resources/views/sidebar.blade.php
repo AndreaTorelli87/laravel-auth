@@ -3,20 +3,20 @@
       <ul class="list-unstyled ps-0">
          <li class="mb-1">
             <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-               data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-               Home
+               data-bs-toggle="collapse" data-bs-target="#project-collapse" aria-expanded="true">
+               Project
             </button>
-            <div class="collapse show" id="home-collapse">
+            <div class="collapse show" id="project-collapse">
                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                   <li>
-                     <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a>
+                     <a href="/admin/projects" class="link-body-emphasis d-inline-flex text-decoration-none rounded">List</a>
                   </li>
-                  <li>
+                  {{-- <li>
                      <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a>
                   </li>
                   <li>
                      <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a>
-                  </li>
+                  </li> --}}
                </ul>
             </div>
          </li>
