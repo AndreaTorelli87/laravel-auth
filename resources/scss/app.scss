@@ -1,8 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
 
+.flip-card .card{
+   height: 27rem;
+}
 .flip-card {
-   width: 332px;
-   height: 503px;
+   // width: 332px;
+   height: 460px;
    // perspective: 1000px;
 }
 

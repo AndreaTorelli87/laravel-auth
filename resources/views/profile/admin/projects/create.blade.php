@@ -11,23 +11,24 @@
       <div class="mb-2">
          <label for="url" class="form-label">Url:</label>
          <input type="text" class="form-control @error("url") is-invalid @enderror" id="url" name="url" value="{{old("url")}}">
+         @error("url")<div class="invalid-feedback">{{ $message }}</div>@enderror
       </div>
-      @error("url")<div class="invalid-feedback">{{ $message }}</div>@enderror
+      
       <div class="mb-2">
          <label for="titolo" class="form-label">Titolo:</label>
          <input type="text" class="form-control @error("titolo") is-invalid @enderror" id="titolo" name="titolo" value="{{old("titolo")}}">
+         @error("titolo")<div class="invalid-feedback">{{ $message }}</div>@enderror
       </div>
-      @error("titolo")<div class="invalid-feedback">{{ $message }}</div>@enderror
       <div class="mb-2">
          <label for="data_creazione" class="form-label">Data_creazione:</label>
          <input type="text" class="form-control @error("data_creazione") is-invalid @enderror" id="data_creazione" name="data_creazione" value="{{old("data_creazione")}}">
+         @error("data_creazione")<div class="invalid-feedback">{{ $message }}</div>@enderror
       </div>
-      @error("data_creazione")<div class="invalid-feedback">{{ $message }}</div>@enderror
       <div class="mb-2">
          <label for="descrizione" class="form-label">Descrizione:</label>
          <input type="text" class="form-control @error("descrizione") is-invalid @enderror" id="descrizione" name="descrizione" value="{{old("descrizione")}}">
+         @error("descrizione")<div class="invalid-feedback">{{ $message }}</div>@enderror
       </div>
-      @error("descrizione")<div class="invalid-feedback">{{ $message }}</div>@enderror
 
       <button type="submit" class="btn btn-primary">Salva</button>
    </form>

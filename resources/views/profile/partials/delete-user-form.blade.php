@@ -1,18 +1,11 @@
 <section class="space-y-6">
     <header>
-        <h2 class="text-lg font-medium text-gray-900">
-            {{ __('Delete Account') }}
-        </h2>
-
-        <p class="mt-1 text-sm text-gray-600">
-            {{ __('Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.') }}
-        </p>
+        <h2 class="text-lg font-medium text-gray-900">Cancella Account</h2>
+        <p class="mt-1 text-sm text-gray-600">Una volta che il tuo account sarà cancellato, tutte le tue risorse e dati saranno persi permanentemente.</p>
     </header>
 
     <!-- Modal trigger button -->
-    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete-account">
-        {{__('Delete Account')}}
-    </button>
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete-account">Cancella Account</button>
 
     <!-- Modal Body -->
     <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
@@ -38,7 +31,6 @@
                         @csrf
                         @method('delete')
 
-
                         <div class="input-group">
 
                             <input id="password" name="password" type="password" class="form-control" placeholder="{{ __('Password') }}" />
@@ -48,8 +40,6 @@
                                 <strong>{{ $errors->userDeletion->get('password')}}</strong>
                             </span>
                             @enderror
-
-
 
                             <button type="submit" class="btn btn-danger">
                                 {{ __('Delete Account') }}
