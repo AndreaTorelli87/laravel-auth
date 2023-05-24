@@ -4,7 +4,7 @@
 
 @section("content")
 
-   <a href="{{route("admin.projects.create")}}" class="btn btn-primary mb-3">Crea nuovo Project</a>
+   <a href="{{route("admin.projects.create")}}" class="btn btn-primary my-4">Crea nuovo Project</a>
 
    <div class="row">
       @foreach ($projects as $project)
@@ -29,6 +29,10 @@
                      </form>
                   </div>
                   <p class="card-text overflow-scroll">Descrizione: {{$project->descrizione}}</p>
+                  <div class="d-flex justify-content-around mb-2">
+                     <a class="btn btn-primary me-2 rounded-circle fs-4" href="/admin/projects"><i class="fa-solid fa-globe"></i></a>
+                     <a class="me-2" href="https://github.com/AndreaTorelli87"><i class="fa-brands fa-github bg-black text-white rounded-circle fs-2 p-2"></i></a>
+                  </div>
                </div>
             </div>
          </div>
